@@ -1,0 +1,284 @@
+﻿@using WebUniversity.ViewModels;
+@model CourseViewModel
+@{
+    ViewData["Title"] = "Detail";
+}
+<head>
+<meta charset="utf-8" />
+<title>Detail of the course</title>
+</head>
+
+<style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <h4>Course Detail</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+    </dl>
+
+    <form asp-controller="Group" asp-action="Create" method="get">
+    <input type="hidden" name="CourseId" value="@Model.Id" />
+    <input type="submit" value="Create new group"  />
+    </form>
+
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by name: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn btn-default" /> |
+            <a asp-action="Index">Back to Full List</a>
+        </p>
+    </div>
+</form>
+
+ <caption>List of groups</caption>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Details" asp-route-sortOrder="@ViewData["IdSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Id</a>
+            </th>
+            <th>
+                <a asp-action="Details" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Name</a>
+            </th>
+            <th>
+                Course Id
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Mygroups)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseID)
+                </td>
+                <td>
+                    <a asp-controller="Group" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-controller="Group" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-controller="Group" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@{
+    var groupList = Model.Mygroups;
+    var prevDisabled = !groupList.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !groupList.HasNextPage ? "disabled" : "";
+    
+}
+<ul class="pagination">
+    <li class="page-item">
+        <a asp-action="Details"
+        asp-route-sortOrder="@ViewData["CurrentSort"]"
+        asp-route-pageNumber="@(groupList.PageIndex - 1)"
+        asp-route-currentFilter="@ViewData["CurrentFilter"]"
+        class="btn btn-default @prevDisabled"
+        class="page-link"
+        aria-current="page">
+        Previous
+        </a>
+    </li>
+
+    <li class="@(groupList.PageIndex == 1 ? "page-item active " : "page-item")">
+        <a asp-action="Details"
+        asp-route-sortOrder="@ViewData["CurrentSort"]"
+        asp-route-pageNumber="@(1)"
+        asp-route-currentFilter="@ViewData["CurrentFilter"]"
+        class="page-link"
+        aria-current="page">
+         1
+        </a>
+    </li>
+    @if (groupList.TotalPages > 3 && groupList.PageIndex > 3 ) { <p> . . . </p> } 
+
+
+    @if(groupList.TotalPages > 3 && groupList.PageIndex > 2 && groupList.PageIndex < groupList.TotalPages)
+    {
+    <li>
+        <a asp-action="Details"
+        asp-route-sortOrder="@ViewData["CurrentSort"]"
+        asp-route-pageNumber="@(groupList.PageIndex - 1)"
+        asp-route-currentFilter="@ViewData["CurrentFilter"]"
+        class="page-link"
+        aria-current="page">
+        @(groupList.PageIndex - 1)
+        </a>
+    </li>
+    }
+
+    @if(groupList.TotalPages > 2){
+    <li class="@((groupList.PageIndex > 1 && groupList.PageIndex < groupList.TotalPages) ? "page-item active " : "page-item")">
+        <a asp-action="Details"
+        asp-route-sortOrder="@ViewData["CurrentSort"]"
+        asp-route-pageNumber="@(groupList.PageIndex == 1 ? groupList.PageIndex + 1 :groupList.PageIndex != groupList.TotalPages ? groupList.PageIndex : groupList.TotalPages - 1 )"
+        asp-route-currentFilter="@ViewData["CurrentFilter"]"
+        class="page-link"
+        aria-current="page">
+         @(groupList.PageIndex == 1 ? groupList.PageIndex + 1 :groupList.PageIndex != groupList.TotalPages ? groupList.PageIndex : groupList.TotalPages - 1 )
+        </a>
+    </li>
+    }
+
+    @if(groupList.TotalPages > 3 && groupList.PageIndex < groupList.TotalPages - 1 && groupList.PageIndex > 1)
+    {
+    <li>
+        <a asp-action="Details"
+        asp-route-sortOrder="@ViewData["CurrentSort"]"
+        asp-route-pageNumber="@(groupList.PageIndex + 1)"
+        asp-route-currentFilter="@ViewData["CurrentFilter"]"
+        class="page-link"
+        aria-current="page">
+        @(groupList.PageIndex + 1)
+        </a>
+    </li>
+    }
+
+    @if (groupList.TotalPages > 3 && groupList.PageIndex < groupList.TotalPages - 2 ) { <p> . . . </p> } 
+
+    @if(groupList.TotalPages > 1){
+    <li class="@(groupList.PageIndex == groupList.TotalPages ? "page-item active " : "page-item")">
+        <a asp-action="Details"
+        asp-route-sortOrder="@ViewData["CurrentSort"]"
+        asp-route-pageNumber="@(groupList.TotalPages)"
+        asp-route-currentFilter="@ViewData["CurrentFilter"]"
+        class="page-link"
+        aria-current="page">
+         @(groupList.TotalPages)
+        </a>
+    </li>
+    }
+
+    <li>
+        <a asp-action="Details"
+            asp-route-sortOrder="@ViewData["CurrentSort"]"
+            asp-route-pageNumber="@(groupList.PageIndex + 1)"
+            asp-route-currentFilter="@ViewData["CurrentFilter"]"
+            class="btn btn-default @nextDisabled"
+            aria-current="page">
+            Next
+        </a>
+    </li>
+</ul>
+
+<div>
+    @Html.ActionLink("Edit", "Edit", new { Model.Id }) |
+    @Html.ActionLink("Delete", "Delete", new { Model.Id}) |
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+  @*
+<body>
+ <h1> Detail</h1>
+ <fieldset>
+ <legend>Course information</legend>
+
+      <div>
+      <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+      </dl>
+      </div>
+
+      <div>
+       <form asp-controller="Group" asp-action="Create" method="get">
+       <input type="hidden" name="CourseId" value="@Model.Id" />
+       <input type="submit" value="Create new group"  />
+       </form>
+      </div>
+
+      <div>
+      <table>
+       <thead>
+        <tr>
+         <th>ID</th>
+         <th>Name</th>
+         <th>Course ID</th>
+         <th></th>
+        </tr>
+       </thead>
+       <tbody>
+        @foreach(var item in @Model.Mygroups){
+         <tr>
+          <td>@item.Id</td>
+          <td>@item.Name</td>
+          <td>@item.CourseID</td>
+          <td>@Html.ActionLink("Edit", "Edit", "Group",new { id = item.Id}) | 
+              @Html.ActionLink("Delete", "Delete", "Group",new { id = item.Id}) |
+              @Html.ActionLink("Detail", "Detail", "Group", new { id = item.Id})
+          </td>
+         </tr>
+        }
+       </tbody>
+      </table>
+      </div>
+      
+ </fieldset>
+
+ <div>
+    @Html.ActionLink("Edit", "Edit", new { Model.Id }) |
+    @Html.ActionLink("Delete", "Delete",new { Model.Id}) |
+    <a asp-action="Index">Back to List</a>
+</div>
+</body>
+</html>
+}
+*@

@@ -1,0 +1,40 @@
+﻿@using WebUniversity.ViewModels;
+@model StudentViewModel
+@{
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Delete student</title>
+</head>
+<body>
+ <h1> Confirmation to delete</h1>
+ <form asp-controller="Student" asp-action="Delete" method="post">
+  @Html.AntiForgeryToken()
+ <fieldset>
+ <legend>Student information</legend>
+       <p>
+       <p><label asp-for="Id"></label>
+       <strong>@Model.Id</strong>
+       </p>
+
+      <p>
+       <label asp-for="LastName"></label>
+       <strong>@Model.LastName</strong>
+      </p>
+
+      <p>
+       <label asp-for="FirstName"></label>
+       <strong>@Model.FirstName</strong>
+      </p>
+
+      <p>
+       <label asp-for="GroupId"></label>
+       <strong>@Model.GroupId</strong>
+      </p>
+
+      <p><input type="submit" name="buttonSubmit" value="Confirm"/></p>
+ </fieldset>
+ </form>
+</body>
+</html>
+}

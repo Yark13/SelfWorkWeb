@@ -1,0 +1,43 @@
+﻿@model CourseViewModel
+@{
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Delete course</title>
+</head>
+<body>
+ <h1> Confirmation to delete</h1>
+ <form asp-controller="Course" asp-action="Delete" method="post">
+ @Html.AntiForgeryToken()
+ <fieldset>
+ <legend>Course information</legend>
+
+       <p><h4><strong style="color: red;">@ViewData["messageIsGroups"]</strong></h4></p>
+
+       <p>
+        <label asp-for="Id"></label>
+        <strong>@Model.Id</strong>
+        <input asp-for="Id" type="hidden"> 
+       </p>
+      <p>
+       <label asp-for="Name"></label>
+       <strong>@Model.Name</strong>
+       <input asp-for="Name" type="hidden"> 
+      </p>
+
+      <p>
+       <label asp-for="Description"></label>
+       <strong>@Model.Description</strong>
+       <input asp-for="Description" type="hidden"> 
+      </p>
+
+      <input asp-for="HasGroups" type="hidden"> 
+
+      <p><input type="submit" name="buttonSubmit" value="Confirm"/></p>
+ </fieldset>
+ </form>
+</body>
+</html>
+}
+
+

@@ -1,0 +1,41 @@
+﻿@model StudentViewModel
+@{
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Edit student</title>
+</head>
+<body>
+ <h1> Edit</h1>
+  <form asp-controller="Student" asp-action="Edit" method="post">
+ @Html.AntiForgeryToken()
+ <fieldset>
+ <legend>Student information</legend>
+       <p>
+       <label asp-for="Id"></label>
+       <strong>@Model.Id</strong>
+       </p>
+
+      <p>
+         <label asp-for="LastName"></label>
+         <input asp-for="LastName" value="@Model.LastName">
+         <span asp-validation-for="LastName" class="text-danger"></span>
+      </p>
+
+      <p>
+         <label asp-for="FirstName"></label>
+         <input asp-for="FirstName" value="@Model.FirstName">
+         <span asp-validation-for="FirstName" class="text-danger"></span>
+      </p>
+
+      <p>
+         <label asp-for="GroupId"></label>
+         <select asp-for="GroupId" asp-items="Model.existingGroups" id="@Model.GroupId" class="form-control"> </select>
+      </p>
+
+      <p><input type="submit" name="buttonSubmit" value="Save changes"/></p>
+ </fieldset>
+ </form>
+</body>
+</html>
+}

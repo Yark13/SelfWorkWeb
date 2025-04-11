@@ -1,0 +1,37 @@
+﻿@using WebUniversity.ViewModels;
+@model CourseViewModel
+@{
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Edit course</title>
+</head>
+<body>
+ <h1> Edit</h1>
+ <form asp-controller="Course" asp-action="Edit" method="post">
+ @Html.AntiForgeryToken()
+ <fieldset>
+ <legend>Course information</legend>
+       <p>
+       <label asp-for="Id"></label>
+       <strong>@Model.Id</strong>
+       </p>
+      <p>
+         <label asp-for="Name"></label>
+         <input asp-for="Name" value="@Model.Name">
+         <span asp-validation-for="Name" class="text-danger"></span>
+      </p>
+
+      <p>
+         <label asp-for="Description"></label>
+         <input asp-for="Description" value="@Model.Description">
+         <span asp-validation-for="Description" class="text-danger"></span>
+      </p>
+
+      <p><input type="submit" name="buttonSubmit" value="Save changes"/></p>
+ </fieldset>
+ </form>
+</body>
+</html>
+}
+

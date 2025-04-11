@@ -1,0 +1,40 @@
+﻿@model GroupViewModel
+@{
+    <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Create new group</title>
+</head>
+<body>
+  <h1>Create new group</h1>
+  <form asp-controller="Group" asp-action="Create" method="post">
+    <fieldset>
+      <legend>Group information</legend>
+
+      <p> 
+        <label asp-for="Name"></label>
+        <input asp-for="Name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+      </p>
+
+      <div>
+      <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CourseID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CourseID)
+        </dd>
+      </dl>
+      <input asp-for="CourseID" type="hidden"> 
+      </div>
+      
+       <div>
+       <input type="submit" value="Create"  />
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
+}

@@ -1,0 +1,33 @@
+﻿@model CourseViewModel
+@{
+    <!DOCTYPE html>
+    <html>
+    <head>
+            <meta charset="utf-8" />
+            <title>Create new course</title>
+                    
+    </head>
+    <h1>Create new course</h1>
+    <body>
+            <div class="Create-form">
+                <form asp-controller="Course" asp-action="Create" method="post">
+                    <legend>Course information</legend>
+
+                    <div>
+                        <label asp-for="Name"></label>
+                        <input asp-for="Name">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <div>
+                        <label asp-for="Description"></label>
+                        <input asp-for="Description">
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+
+                    <p><input type="submit" name="buttonSubmit" value="Create"/></p>
+                </form>
+                </div>
+    </body>
+    </html>
+}
