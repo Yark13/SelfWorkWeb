@@ -12740,11 +12740,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Foxminded\\Task_10\\WebUniversity\\WebUniversity\\WebUniversity.csproj",
+      "projectUniqueName": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\WebUniversity.csproj",
       "projectName": "WebUniversity",
-      "projectPath": "D:\\Foxminded\\Task_10\\WebUniversity\\WebUniversity\\WebUniversity.csproj",
+      "projectPath": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\WebUniversity.csproj",
       "packagesPath": "C:\\Users\\38098\\.nuget\\packages\\",
-      "outputPath": "D:\\Foxminded\\Task_10\\WebUniversity\\WebUniversity\\obj\\",
+      "outputPath": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program\\Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

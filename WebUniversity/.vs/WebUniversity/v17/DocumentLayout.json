@@ -1,13 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Foxminded\\Task_10\\WebUniversity\\",
+  "WorkspaceRootPath": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\foxminded\\task_10\\webuniversity\\webuniversity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\foxminded\\task_10\\webuniversity\\webuniversity\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\webuniversity.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\webuniversity.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,8 +30,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Program.cs",
+              "RelativeDocumentMoniker": "WebUniversity\\Program.cs",
+              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Program.cs",
+              "RelativeToolTip": "WebUniversity\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T19:39:24.663Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -29,29 +55,51 @@
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Foxminded\\Task_10\\WebUniversity\\WebUniversity\\appsettings.json",
-              "RelativeDocumentMoniker": "WebUniversity\\appsettings.json",
-              "ToolTip": "D:\\Foxminded\\Task_10\\WebUniversity\\WebUniversity\\appsettings.json",
-              "RelativeToolTip": "WebUniversity\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAfAAAA",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebUniversity\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebUniversity\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-31T14:35:28.631Z",
+              "WhenOpened": "2025-04-12T14:56:08.786Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "WebUniversity",
+              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\WebUniversity.csproj",
+              "RelativeDocumentMoniker": "WebUniversity\\WebUniversity.csproj",
+              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\WebUniversity.csproj",
+              "RelativeToolTip": "WebUniversity\\WebUniversity.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-12T14:47:22.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebUniversity\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebUniversity\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAvwCgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T19:30:13.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "GroupController.cs",
-              "DocumentMoniker": "D:\\Foxminded\\Task_10\\WebUniversity\\WebUniversity\\Controllers\\GroupController.cs",
+              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\GroupController.cs",
               "RelativeDocumentMoniker": "WebUniversity\\Controllers\\GroupController.cs",
-              "ToolTip": "D:\\Foxminded\\Task_10\\WebUniversity\\WebUniversity\\Controllers\\GroupController.cs",
+              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\GroupController.cs",
               "RelativeToolTip": "WebUniversity\\Controllers\\GroupController.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

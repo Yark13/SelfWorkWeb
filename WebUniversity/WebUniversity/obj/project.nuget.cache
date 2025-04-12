@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WNVk/MAplsQ=",
+  "dgSpecHash": "7T7FQRe4Me8=",
   "success": true,
-  "projectFilePath": "D:\\Foxminded\\Task_10\\WebUniversity\\WebUniversity\\WebUniversity.csproj",
+  "projectFilePath": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\WebUniversity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\38098\\.nuget\\packages\\abp\\8.3.1\\abp.8.3.1.nupkg.sha512",
     "C:\\Users\\38098\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
