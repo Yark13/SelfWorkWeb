@@ -6,8 +6,6 @@ using WebUniversity.ViewModels;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
-builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
 builder.Services.AddDbContext<StateDbContext>();
 builder.Services.AddScoped<IUnitOfWork<StateDbContext>, UnitOfWork<StateDbContext>>();

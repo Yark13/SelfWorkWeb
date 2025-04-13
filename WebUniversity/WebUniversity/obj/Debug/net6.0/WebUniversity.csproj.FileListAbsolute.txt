@@ -1222,3 +1222,4 @@ D:\Subjects\8 semester\Web\Selfwork\WebUniversity\WebUniversity\obj\Debug\net6.0
 D:\Subjects\8 semester\Web\Selfwork\WebUniversity\WebUniversity\obj\Debug\net6.0\WebUniversity.genruntimeconfig.cache
 D:\Subjects\8 semester\Web\Selfwork\WebUniversity\WebUniversity\obj\Debug\net6.0\ref\WebUniversity.dll
 D:\Subjects\8 semester\Web\Selfwork\WebUniversity\WebUniversity\bin\Debug\net6.0\appsettings.Production.json
+D:\Subjects\8 semester\Web\Selfwork\WebUniversity\WebUniversity\bin\Debug\net6.0\wwwroot\images\MainWindowBackGround.jpg

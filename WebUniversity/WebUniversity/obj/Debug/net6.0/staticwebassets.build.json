@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "U0dwJuekBC7Rwig06R1DegJyGKBTMwOaLbORTvYyF6Y=",
+  "Hash": "qU7Eg4+7iRjGoPAroJYhbj3pII9lqL0P6a150P9Reiw=",
   "Source": "WebUniversity",
   "BasePath": "_content/WebUniversity",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebUniversity.bundle.scp.css"
     },
     {
+      "Identity": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\css\\login.css",
+      "SourceId": "WebUniversity",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\",
+      "BasePath": "_content/WebUniversity",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
       "Identity": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\css\\site.css",
       "SourceId": "WebUniversity",
       "SourceType": "Discovered",
@@ -91,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\images\\MainWindowBackGround.jpg",
+      "SourceId": "WebUniversity",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\",
+      "BasePath": "_content/WebUniversity",
+      "RelativePath": "images/MainWindowBackGround.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\MainWindowBackGround.jpg"
     },
     {
       "Identity": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\js\\site.js",

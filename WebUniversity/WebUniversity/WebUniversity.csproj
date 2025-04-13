@@ -31,4 +31,10 @@
     <PackageReference Include="System.Web.Mvc.ExpressionLinks" Version="0.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\images\MainWindowBackGround.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
