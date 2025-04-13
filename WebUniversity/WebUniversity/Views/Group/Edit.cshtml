@@ -1,35 +1,28 @@
-﻿@using WebUniversity.ViewModels;
-@model GroupViewModel
-@{
-<html>
-<head>
-<meta charset="utf-8" />
-<title>Edit group</title>
-</head>
-<body>
- <h1> Edit</h1>
- <form asp-controller="Group" asp-action="Edit" method="post">
- @Html.AntiForgeryToken()
- <fieldset>
- <legend>Group information</legend>
-       <p>
-        <label asp-for="Id"></label>
-        <strong>@Model.Id</strong>
-       </p>
-      <p>
-        <label asp-for="Name"></label>
-        <input asp-for="Name" value="@Model.Name">
-        <span asp-validation-for="Name" class="text-danger"></span>
-      </p>
+﻿@model GroupViewModel
+<link rel="stylesheet" href="~/css/entity-form.css" />
 
-      <p>
-        <label asp-for="CourseID"></label>
-        <select asp-for="CourseID" asp-items="Model.existingCourses" id="@Model.CourseID" class="form-control"> </select>
-      </p>
+<h1>Edit Group</h1>
+<form asp-controller="Group" asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+    <fieldset>
+        <legend>Group Information</legend>
 
-      <p><input type="submit" name="buttonSubmit" value="Save changes"/></p>
- </fieldset>
- </form>
-</body>
-</html>
-}
+        <div class="form-group">
+            <label asp-for="Id"></label>
+            <strong>@Model.Id</strong>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="CourseID"></label>
+            <select asp-for="CourseID" asp-items="Model.existingCourses" class="form-control"></select>
+        </div>
+
+        <input type="submit" name="buttonSubmit" value="Save changes" />
+    </fieldset>
+</form>

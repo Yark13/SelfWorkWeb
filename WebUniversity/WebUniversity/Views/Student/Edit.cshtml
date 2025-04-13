@@ -1,41 +1,34 @@
 ﻿@model StudentViewModel
-@{
-<html>
-<head>
-<meta charset="utf-8" />
-<title>Edit student</title>
-</head>
-<body>
- <h1> Edit</h1>
-  <form asp-controller="Student" asp-action="Edit" method="post">
- @Html.AntiForgeryToken()
- <fieldset>
- <legend>Student information</legend>
-       <p>
-       <label asp-for="Id"></label>
-       <strong>@Model.Id</strong>
-       </p>
+<link rel="stylesheet" href="~/css/entity-form.css" />
 
-      <p>
-         <label asp-for="LastName"></label>
-         <input asp-for="LastName" value="@Model.LastName">
-         <span asp-validation-for="LastName" class="text-danger"></span>
-      </p>
+<h1>Edit Student</h1>
+<form asp-controller="Student" asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+    <fieldset>
+        <legend>Student Information</legend>
 
-      <p>
-         <label asp-for="FirstName"></label>
-         <input asp-for="FirstName" value="@Model.FirstName">
-         <span asp-validation-for="FirstName" class="text-danger"></span>
-      </p>
+        <div class="form-group">
+            <label asp-for="Id"></label>
+            <strong>@Model.Id</strong>
+        </div>
 
-      <p>
-         <label asp-for="GroupId"></label>
-         <select asp-for="GroupId" asp-items="Model.existingGroups" id="@Model.GroupId" class="form-control"> </select>
-      </p>
+        <div class="form-group">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
 
-      <p><input type="submit" name="buttonSubmit" value="Save changes"/></p>
- </fieldset>
- </form>
-</body>
-</html>
-}
+        <div class="form-group">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="GroupId"></label>
+            <select asp-for="GroupId" asp-items="Model.existingGroups" class="form-control"></select>
+        </div>
+
+        <input type="submit" name="buttonSubmit" value="Save changes" />
+    </fieldset>
+</form>
