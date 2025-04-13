@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oOc6gzNl+7bz7StfblCXR7Cz9mFaeboSOMu1jXlFKA0=",
+  "Hash": "p3kQX6GFXTAvoheKHQHiuXkdPHdp2GmgywNHBIKkf/s=",
   "Source": "WebUniversity",
   "BasePath": "_content/WebUniversity",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebUniversity.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\css\\delete-confirmation.css",
+      "SourceId": "WebUniversity",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\",
+      "BasePath": "_content/WebUniversity",
+      "RelativePath": "css/delete-confirmation.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\delete-confirmation.css"
     },
     {
       "Identity": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\css\\entity-index.css",
