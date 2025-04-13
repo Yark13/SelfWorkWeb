@@ -37,8 +37,11 @@ namespace WebUniversity.Controllers
         [HttpGet]
         public IActionResult Create(int GroupId)
         {
+            var existingGroups = _unitOfWork.GetRepository<Group>().GetAll().AsQueryable().Select(x => new SelectListItem { Value = $"{x.Id}", Text = $"ID: {x.Id} Name: {x.Name}" });
+
             StudentViewModel newGroup = new StudentViewModel();
             newGroup.GroupId = GroupId;
+            newGroup.existingGroups = existingGroups.ToList();
 
             return View(newGroup);
         }

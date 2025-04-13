@@ -1,33 +1,24 @@
 ﻿@model CourseViewModel
-@{
-    <!DOCTYPE html>
-    <html>
-    <head>
-            <meta charset="utf-8" />
-            <title>Create new course</title>
-                    
-    </head>
-    <h1>Create new course</h1>
-    <body>
-            <div class="Create-form">
-                <form asp-controller="Course" asp-action="Create" method="post">
-                    <legend>Course information</legend>
+<link rel="stylesheet" href="~/css/entity-form.css" />
 
-                    <div>
-                        <label asp-for="Name"></label>
-                        <input asp-for="Name">
-                        <span asp-validation-for="Name" class="text-danger"></span>
-                    </div>
+<h1>Create New Course</h1>
+<form asp-controller="Course" asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+    <fieldset>
+        <legend>Course Information</legend>
 
-                    <div>
-                        <label asp-for="Description"></label>
-                        <input asp-for="Description">
-                        <span asp-validation-for="Description" class="text-danger"></span>
-                    </div>
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
 
-                    <p><input type="submit" name="buttonSubmit" value="Create"/></p>
-                </form>
-                </div>
-    </body>
-    </html>
-}
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <input asp-for="Description" />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <input type="submit" value="Create" />
+    </fieldset>
+</form>
