@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +15,20 @@
       "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\views\\group\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\views\\group\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\views\\group\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\views\\group\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\views\\group\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\views\\group\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\wwwroot\\css\\entity-form.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\wwwroot\\css\\entity-form.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|d:\\subjects\\8 semester\\web\\selfwork\\webuniversity\\webuniversity\\wwwroot\\css\\entity-details.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{865E5BC0-1A96-42F6-B355-25D90A38B05A}|WebUniversity\\WebUniversity.csproj|solutionrelative:webuniversity\\wwwroot\\css\\entity-details.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,66 +51,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "WebUniversity\\Controllers\\StudentController.cs",
-              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\StudentController.cs*",
-              "RelativeToolTip": "WebUniversity\\Controllers\\StudentController.cs*",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAACsAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T22:04:30.034Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "entity-form.css",
-              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\css\\entity-form.css",
-              "RelativeDocumentMoniker": "WebUniversity\\wwwroot\\css\\entity-form.css",
-              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\css\\entity-form.css",
-              "RelativeToolTip": "WebUniversity\\wwwroot\\css\\entity-form.css",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-13T21:58:50.232Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Views\\Student\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebUniversity\\Views\\Student\\Create.cshtml",
+              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Views\\Student\\Create.cshtml",
+              "RelativeToolTip": "WebUniversity\\Views\\Student\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-14T07:53:08.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GroupController.cs",
-              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\GroupController.cs",
-              "RelativeDocumentMoniker": "WebUniversity\\Controllers\\GroupController.cs",
-              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\GroupController.cs",
-              "RelativeToolTip": "WebUniversity\\Controllers\\GroupController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAiwCkAAAAUAAAA",
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "WebUniversity\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "WebUniversity\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAmwDMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T21:57:02.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Views\\Group\\Edit.cshtml",
-              "RelativeDocumentMoniker": "WebUniversity\\Views\\Group\\Edit.cshtml",
-              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Views\\Group\\Edit.cshtml",
-              "RelativeToolTip": "WebUniversity\\Views\\Group\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T21:52:24.077Z",
+              "WhenOpened": "2025-04-14T07:50:25.489Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Views\\Group\\Create.cshtml",
-              "RelativeDocumentMoniker": "WebUniversity\\Views\\Group\\Create.cshtml",
-              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Views\\Group\\Create.cshtml",
-              "RelativeToolTip": "WebUniversity\\Views\\Group\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Title": "GroupController.cs",
+              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\GroupController.cs",
+              "RelativeDocumentMoniker": "WebUniversity\\Controllers\\GroupController.cs",
+              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\GroupController.cs",
+              "RelativeToolTip": "WebUniversity\\Controllers\\GroupController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T07:50:07.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "WebUniversity\\Controllers\\CourseController.cs",
+              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "WebUniversity\\Controllers\\CourseController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T07:50:00.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Views\\Group\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebUniversity\\Views\\Group\\Details.cshtml",
+              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Views\\Group\\Details.cshtml",
+              "RelativeToolTip": "WebUniversity\\Views\\Group\\Details.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACEAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T21:39:37.86Z",
+              "WhenOpened": "2025-04-14T07:33:32.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Views\\Course\\Details.cshtml",
+              "RelativeDocumentMoniker": "WebUniversity\\Views\\Course\\Details.cshtml",
+              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\Views\\Course\\Details.cshtml",
+              "RelativeToolTip": "WebUniversity\\Views\\Course\\Details.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-14T07:19:50.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "entity-details.css",
+              "DocumentMoniker": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\css\\entity-details.css",
+              "RelativeDocumentMoniker": "WebUniversity\\wwwroot\\css\\entity-details.css",
+              "ToolTip": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\css\\entity-details.css",
+              "RelativeToolTip": "WebUniversity\\wwwroot\\css\\entity-details.css",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAiwOUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-14T06:49:06.344Z",
               "EditorCaption": ""
             }
           ]

@@ -1,53 +1,38 @@
 ﻿@model WebUniversity.ViewModels.GroupViewModel
-
 @{
     ViewData["Title"] = "Detail";
 }
 
+<link rel="stylesheet" href="~/css/entity-details.css" />
 
-<style>
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
+<hr />
+<h4>Group Detail</h4>
+<dl class="details-container">
     
-    th, td {
-      border: 1px solid black;
-      padding: 8px;
-    }
-    
-    caption {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-  </style>
-  <h4>Group Detail</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CourseID)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CourseID)
-        </dd>
-    </dl>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Id)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Id)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Name)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Name)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.CourseID)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.CourseID)
+    </dd>
+</dl>
 
-    <form asp-controller="Student" asp-action="Create" method="get">
+<form asp-controller="Student" asp-action="Create" method="get">
     <input type="hidden" name="GroupId" value="@Model.Id" />
-    <input type="submit" value="Create new student"  />
-    </form>
+    <input type="submit" value="Create new student" class="btn btn-primary" />
+</form>
 
 <form asp-action="Index" method="get">
     <div class="form-actions no-color">
@@ -59,50 +44,36 @@
     </div>
 </form>
 
- <caption>List of students</caption>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                <a asp-action="Details" asp-route-sortOrder="@ViewData["IdSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Id</a>
-            </th>
-            <th>
-                <a asp-action="Details" asp-route-sortOrder="@ViewData["LastNameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Last name</a>
-            </th>
-            <th>
-                <a asp-action="Details" asp-route-sortOrder="@ViewData["FirstNameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">First name</a>
-            </th>
-            <th>
-                Group Id
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.MyStudents)
-        {
+<caption>List of students</caption>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Id)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LastName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.FirstName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.GroupId)
-                </td>
-                <td>
-                    <a asp-controller="Student" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-controller="Student" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
+                <th><a asp-action="Details" asp-route-sortOrder="@ViewData["IdSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Id</a></th>
+                <th><a asp-action="Details" asp-route-sortOrder="@ViewData["LastNameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">Last name</a></th>
+                <th><a asp-action="Details" asp-route-sortOrder="@ViewData["FirstNameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]">First name</a></th>
+                <th>Group Id</th>
+                <th>Actions</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.MyStudents)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                    <td>@Html.DisplayFor(modelItem => item.LastName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FirstName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.GroupId)</td>
+                    <td>
+                        <a asp-controller="Student" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning me-1">Edit</a>
+                        <a asp-controller="Student" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 
+</div>
 @{
     var prevDisabled = !Model.MyStudents.HasPreviousPage ? "disabled" : "";
     var nextDisabled = !Model.MyStudents.HasNextPage ? "disabled" : "";
@@ -111,99 +82,107 @@
 <ul class="pagination">
     <li class="page-item">
         <a asp-action="Details"
-        asp-route-sortOrder="@ViewData["CurrentSort"]"
-        asp-route-pageNumber="@(studentsList.PageIndex - 1)"
-        asp-route-currentFilter="@ViewData["CurrentFilter"]"
-        class="btn btn-default @prevDisabled"
-        class="page-link"
-        aria-current="page">
-        Previous
+           asp-route-sortOrder="@ViewData["CurrentSort"]"
+           asp-route-pageNumber="@(studentsList.PageIndex - 1)"
+           asp-route-currentFilter="@ViewData["CurrentFilter"]"
+           class="btn btn-default @prevDisabled"
+           class="page-link"
+           aria-current="page">
+            Previous
         </a>
     </li>
 
     <li class="@(studentsList.PageIndex == 1 ? "page-item active " : "page-item")">
         <a asp-action="Details"
-        asp-route-sortOrder="@ViewData["CurrentSort"]"
-        asp-route-pageNumber="@(1)"
-        asp-route-currentFilter="@ViewData["CurrentFilter"]"
-        class="page-link"
-        aria-current="page">
-         1
+           asp-route-sortOrder="@ViewData["CurrentSort"]"
+           asp-route-pageNumber="@(1)"
+           asp-route-currentFilter="@ViewData["CurrentFilter"]"
+           class="page-link"
+           aria-current="page">
+            1
         </a>
     </li>
-    @if (studentsList.TotalPages > 3 && studentsList.PageIndex > 3 ) { <p> . . . </p> } 
-
-
-    @if(studentsList.TotalPages > 3 && studentsList.PageIndex > 2 && studentsList.PageIndex < studentsList.TotalPages)
+    @if (studentsList.TotalPages > 3 && studentsList.PageIndex > 3)
     {
-    <li>
-        <a asp-action="Details"
-        asp-route-sortOrder="@ViewData["CurrentSort"]"
-        asp-route-pageNumber="@(studentsList.PageIndex - 1)"
-        asp-route-currentFilter="@ViewData["CurrentFilter"]"
-        class="page-link"
-        aria-current="page">
-        @(studentsList.PageIndex - 1)
-        </a>
-    </li>
+        <p> . . . </p>
     }
 
-    @if(studentsList.TotalPages > 2){
-    <li class="@((studentsList.PageIndex > 1 && studentsList.PageIndex < studentsList.TotalPages) ? "page-item active " : "page-item")">
-        <a asp-action="Details"
-        asp-route-sortOrder="@ViewData["CurrentSort"]"
-        asp-route-pageNumber="@(studentsList.PageIndex == 1 ? studentsList.PageIndex + 1 :studentsList.PageIndex != studentsList.TotalPages ? studentsList.PageIndex : studentsList.TotalPages - 1 )"
-        asp-route-currentFilter="@ViewData["CurrentFilter"]"
-        class="page-link"
-        aria-current="page">
-         @(studentsList.PageIndex == 1 ? studentsList.PageIndex + 1 :studentsList.PageIndex != studentsList.TotalPages ? studentsList.PageIndex : studentsList.TotalPages - 1 )
-        </a>
-    </li>
-    }
 
-    @if(studentsList.TotalPages > 3 && studentsList.PageIndex < studentsList.TotalPages - 1 && studentsList.PageIndex > 1)
+    @if (studentsList.TotalPages > 3 && studentsList.PageIndex > 2 && studentsList.PageIndex < studentsList.TotalPages)
     {
-    <li>
-        <a asp-action="Details"
-        asp-route-sortOrder="@ViewData["CurrentSort"]"
-        asp-route-pageNumber="@(studentsList.PageIndex + 1)"
-        asp-route-currentFilter="@ViewData["CurrentFilter"]"
-        class="page-link"
-        aria-current="page">
-        @(studentsList.PageIndex + 1)
-        </a>
-    </li>
+        <li>
+            <a asp-action="Details"
+               asp-route-sortOrder="@ViewData["CurrentSort"]"
+               asp-route-pageNumber="@(studentsList.PageIndex - 1)"
+               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+               class="page-link"
+               aria-current="page">
+                @(studentsList.PageIndex - 1)
+            </a>
+        </li>
     }
 
-    @if (studentsList.TotalPages > 3 && studentsList.PageIndex < studentsList.TotalPages - 2 ) { <p> . . . </p> } 
+    @if (studentsList.TotalPages > 2)
+    {
+        <li class="@((studentsList.PageIndex > 1 && studentsList.PageIndex < studentsList.TotalPages) ? "page-item active " : "page-item")">
+            <a asp-action="Details"
+               asp-route-sortOrder="@ViewData["CurrentSort"]"
+               asp-route-pageNumber="@(studentsList.PageIndex == 1 ? studentsList.PageIndex + 1 :studentsList.PageIndex != studentsList.TotalPages ? studentsList.PageIndex : studentsList.TotalPages - 1 )"
+               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+               class="page-link"
+               aria-current="page">
+                @(studentsList.PageIndex == 1 ? studentsList.PageIndex + 1 : studentsList.PageIndex != studentsList.TotalPages ? studentsList.PageIndex : studentsList.TotalPages - 1)
+            </a>
+        </li>
+    }
 
-    @if(studentsList.TotalPages > 1){
-    <li class="@(studentsList.PageIndex == studentsList.TotalPages ? "page-item active " : "page-item")">
-        <a asp-action="Details"
-        asp-route-sortOrder="@ViewData["CurrentSort"]"
-        asp-route-pageNumber="@(studentsList.TotalPages)"
-        asp-route-currentFilter="@ViewData["CurrentFilter"]"
-        class="page-link"
-        aria-current="page">
-         @(studentsList.TotalPages)
-        </a>
-    </li>
+    @if (studentsList.TotalPages > 3 && studentsList.PageIndex < studentsList.TotalPages - 1 && studentsList.PageIndex > 1)
+    {
+        <li>
+            <a asp-action="Details"
+               asp-route-sortOrder="@ViewData["CurrentSort"]"
+               asp-route-pageNumber="@(studentsList.PageIndex + 1)"
+               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+               class="page-link"
+               aria-current="page">
+                @(studentsList.PageIndex + 1)
+            </a>
+        </li>
+    }
+
+    @if (studentsList.TotalPages > 3 && studentsList.PageIndex < studentsList.TotalPages - 2)
+    {
+        <p> . . . </p>
+    }
+
+    @if (studentsList.TotalPages > 1)
+    {
+        <li class="@(studentsList.PageIndex == studentsList.TotalPages ? "page-item active " : "page-item")">
+            <a asp-action="Details"
+               asp-route-sortOrder="@ViewData["CurrentSort"]"
+               asp-route-pageNumber="@(studentsList.TotalPages)"
+               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+               class="page-link"
+               aria-current="page">
+                @(studentsList.TotalPages)
+            </a>
+        </li>
     }
 
     <li>
         <a asp-action="Details"
-            asp-route-sortOrder="@ViewData["CurrentSort"]"
-            asp-route-pageNumber="@(studentsList.PageIndex + 1)"
-            asp-route-currentFilter="@ViewData["CurrentFilter"]"
-            class="btn btn-default @nextDisabled"
-            aria-current="page">
+           asp-route-sortOrder="@ViewData["CurrentSort"]"
+           asp-route-pageNumber="@(studentsList.PageIndex + 1)"
+           asp-route-currentFilter="@ViewData["CurrentFilter"]"
+           class="btn btn-default @nextDisabled"
+           aria-current="page">
             Next
         </a>
     </li>
 </ul>
 
 <div>
-    @Html.ActionLink("Edit", "Edit", new { Model.Id }) |
-    @Html.ActionLink("Delete", "Delete", new { Model.Id}) |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-sm btn-warning me-1">Edit</a>
+    <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-sm btn-danger">Delete</a>
+    <a asp-action="Index" class="btn btn-sm btn-info me-1">Back to List</a>
 </div>

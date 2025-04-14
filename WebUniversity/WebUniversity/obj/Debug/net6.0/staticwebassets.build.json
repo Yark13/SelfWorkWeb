@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XpnB2keTDMaDQ/wJcB1gVoSBSyM1eSQ22EVn1CO/AgQ=",
+  "Hash": "GHflJqD1xSxbhWAY7EKYUnHzM81T0em8JOQSbtNCq2Y=",
   "Source": "WebUniversity",
   "BasePath": "_content/WebUniversity",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\delete-confirmation.css"
+    },
+    {
+      "Identity": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\css\\entity-details.css",
+      "SourceId": "WebUniversity",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\",
+      "BasePath": "_content/WebUniversity",
+      "RelativePath": "css/entity-details.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\entity-details.css"
     },
     {
       "Identity": "D:\\Subjects\\8 semester\\Web\\Selfwork\\WebUniversity\\WebUniversity\\wwwroot\\css\\entity-form.css",
